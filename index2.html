@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugra FC Web Sitesi</title>
+    <style>
+        /* Genel Stil */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #121212; /* Siyah Arka Plan */
+            color: #e0e0e0; /* Açık gri metin */
+            overflow-x: hidden;
+        }
+
+        /* Konteyner */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #1f1f1f; /* Koyu gri navbar */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo img {
+            width: 60px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #e0e0e0; /* Açık gri metin */
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff5722; /* Turuncu hover efekti */
+            transform: scale(1.1);
+        }
+
+        /* Hero Bölümü */
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            background: linear-gradient(to right, #121212, #232323); /* Koyu geçişli arka plan */
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #ff5722; /* Turuncu başlık rengi */
+        }
+
+        .hero h2 {
+            font-size: 1.8em;
+            color: #cccccc; /* Açık gri alt başlık */
+            margin-bottom: 30px;
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.2);
+        }
+
+        /* İçerik Bölümleri */
+        .section {
+            padding: 50px 20px;
+            background: #1f1f1f; /* Koyu gri arka plan */
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #fff;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            text-align: center;
+            color: #cccccc; /* Açık gri metin */
+            line-height: 1.6;
+        }
+
+        /* Butonlar */
+        .btn {
+            background-color: #ff5722; /* Turuncu buton */
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 25px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e64a19; /* Koyu turuncu hover efekti */
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            background: #121212;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            margin-top: 50px;
+        }
+
+        /* Responsive Tasarım */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero h2 {
+                font-size: 1.4em;
+            }
+
+            .section h2 {
+                font-size: 2em;
+            }
+
+            .section p {
+                font-size: 1.1em;
+            }
+
+            .social-media img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo" style="margin-top: -10px;">
+            <img src="logo.png" alt="Bugra FC Logo">
+        </div>
+        <ul style="margin-top: 20px;"> <!-- Listeyi biraz daha aşağıya kaydırmak için margin-top ekledik -->
+            <li><a href="#">Ana Sayfa</a></li>
+            <li><a href="#">Hakkında</a></li>
+            <li><a href="#">Projeler</a></li>
+            <li><a href="#">İletişim</a></li>
+        </ul>
+    </div>
+    
+
+    <!-- Hero Bölümü -->
+    <div class="hero">
+        <h1>BUGRA FC</h1>
+        <h2>Bugra fc web sitesine hoşgeldiniz</h2>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@BUGRAFC" target="_blank">
+                <img src="youtube-icon.png" alt="YouTube">
+            </a>
+            <a href="https://x.com/bugrafcyoutube" target="_blank">
+                <img src="x-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/bugrafc27/" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/bugra-k%C4%B1z%C4%B1lp%C4%B1nar-394285254/" target="_blank">
+                <img src="linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.twitch.tv/bugrafcxy" target="_blank">
+                <img src="twitch-icon.png" alt="Twitch">
+            </a>
+        </div>
+        
+    </div>
+
+    <!-- İçerik Bölümleri -->
+    <div class="container">
+        <div class="section">
+            <h2>Hakkımızda</h2>
+            <p>Bugra FC, futbolu ve eğlenceyi bir araya getiren bir platformdur. Sizinle büyümeye devam ediyoruz. Takım çalışması ve eğlenceyi buluşturuyoruz.</p>
+        </div>
+
+        <div class="section">
+            <h2>Projeler</h2>
+            <p>En son projelerimizi keşfedin ve dünyamıza katılın. Sosyal medya içerikleri, etkinlikler ve daha fazlası!</p>
+        </div>
+
+        <div class="section">
+            <h2>İletişim</h2>
+            <p>Bizimle iletişime geçmek kolay! Aşağıdaki bağlantılarla bize ulaşabilirsiniz.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Bugra FC - Tüm Hakları Saklıdır</p>
+    </div>
+    <!DOCTYPE html>
+    <html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canlı Sohbet</title>
+        <style>
+            /* Sohbet Kutusu Stilleri */
+            #chat-box {
+                display: none;
+                flex-direction: column;
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                width: 300px;
+                height: 400px;
+                background-color: #333;
+                color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                padding: 10px;
+                z-index: 9999;
+                transition: all 0.3s ease;
+            }
+        
+            #messages {
+                flex-grow: 1;
+                overflow-y: auto;
+                padding: 10px;
+                border-bottom: 1px solid #444;
+                max-height: calc(100% - 70px);
+            }
+        
+            .message {
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 5px;
+                max-width: 80%;
+                word-wrap: break-word;
+            }
+        
+            .user-message {
+                background-color: #007acc;
+                color: white;
+                align-self: flex-end;
+            }
+        
+            .bot-message {
+                background-color: #555;
+                color: white;
+                align-self: flex-start;
+            }
+        
+            #message-input {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            #user-input {
+                width: 80%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                margin-right: 10px;
+                font-size: 1rem;
+            }
+        
+            #message-input button {
+                padding: 10px;
+                border: none;
+                background-color: #007acc;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+            }
+        
+            #message-input button:hover {
+                background-color: #005f99;
+            }
+        
+            /* Sohbet açma butonu */
+            #chat-toggle {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background-color: #007acc;
+                color: white;
+                padding: 15px;
+                border-radius: 50%;
+                cursor: pointer;
+                font-size: 24px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                z-index: 9999;
+                transition: all 0.3s ease;
+            }
+        
+            #chat-toggle:hover {
+                background-color: #005f99;
+            }
+    
+            /* Çarpı butonu */
+            #close-chat {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                background-color: #ff4d4d;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                font-size: 20px;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            #close-chat:hover {
+                background-color: #cc0000;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Sohbet Kutusu -->
+        <div id="chat-box">
+            <!-- Sohbet kutusunu kapatma çarpı butonu -->
+            <button id="close-chat" onclick="toggleChat()">×</button>
+            <div id="messages">
+                <!-- Sohbet mesajları burada gösterilecek -->
+            </div>
+            <div id="message-input">
+                <input type="text" id="user-input" placeholder="Mesajınızı yazın..." />
+                <!-- Gönder butonu -->
+                <button onclick="sendMessage()">Gönder</button>
+            </div>
+        </div>
+        
+        <!-- Sohbeti açma butonu -->
+        <div id="chat-toggle" onclick="toggleChat()">💬</div>
+        
+        <script>
+            // Sohbet kutusunu açma ve kapama
+            function toggleChat() {
+                const chatBox = document.getElementById('chat-box');
+                const chatToggle = document.getElementById('chat-toggle');
+    
+                // Sohbet kutusunun görünürlüğünü değiştir
+                if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+                    chatBox.style.display = 'flex';
+                    chatToggle.style.display = 'none';  // Sohbet butonunu gizle
+                } else {
+                    chatBox.style.display = 'none';
+                    chatToggle.style.display = 'block'; // Sohbet butonunu tekrar göster
+                }
+            }
+        
+            // Mesaj gönderme işlevi
+            function sendMessage() {
+                const userMessage = document.getElementById('user-input').value;
+                if (userMessage) {
+                    const messageContainer = document.createElement('div');
+                    messageContainer.classList.add('message', 'user-message');
+                    messageContainer.textContent = "Kullanıcı: " + userMessage;
+                    document.getElementById('messages').appendChild(messageContainer);
+        
+                    // Temizle
+                    document.getElementById('user-input').value = '';
+        
+                    // Cevap simülasyonu (örnek olarak sabit mesaj)
+                    setTimeout(() => {
+                        const replyContainer = document.createElement('div');
+                        replyContainer.classList.add('message', 'bot-message');
+                        replyContainer.textContent = "BUGRAFC ASİSTAN: Merhaba! Size nasıl yardımcı olabilirim?";
+                        document.getElementById('messages').appendChild(replyContainer);
+        
+                        // Sohbetin en son mesajına kaydırma
+                        const messages = document.getElementById('messages');
+                        messages.scrollTop = messages.scrollHeight;
+                    }, 1000);
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
+  
+       
+    
+    
+
+</body>
+</html>
